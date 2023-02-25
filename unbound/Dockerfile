@@ -7,6 +7,7 @@ WORKDIR /build
 RUN apt-get update
 RUN apt-get install --no-install-recommends -y \
   curl=7.74.0-1.3+deb11u5 \
+  ca-certificates=20210119 \
   unzip=6.0-26+deb11u1 \
   build-essential=12.9 \
   libexpat1-dev=2.2.10-2+deb11u5 \
