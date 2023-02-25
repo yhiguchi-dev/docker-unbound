@@ -30,6 +30,8 @@ RUN \
   && \
   apt-get install --no-install-recommends -y \
     libssl-dev=1.1.1n-0+deb11u4 \
+    # CVE-2023-0361
+    libgnutls30=3.7.1-5+deb11u3 \
   && \
   rm -rf /var/lib/apt/lists/* \
   && \
